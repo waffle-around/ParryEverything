@@ -656,6 +656,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 6450608012000606388, guid: d79c5edf719d28946b2c1e16b9bf638d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.7600004
+      objectReference: {fileID: 0}
+    - target: {fileID: 6450608012000606388, guid: d79c5edf719d28946b2c1e16b9bf638d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.920003
+      objectReference: {fileID: 0}
+    - target: {fileID: 6450608012000606388, guid: d79c5edf719d28946b2c1e16b9bf638d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6450608012000606388, guid: d79c5edf719d28946b2c1e16b9bf638d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6450608012000606388, guid: d79c5edf719d28946b2c1e16b9bf638d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6450608012000606388, guid: d79c5edf719d28946b2c1e16b9bf638d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6450608012000606388, guid: d79c5edf719d28946b2c1e16b9bf638d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
     - target: {fileID: 8343698490060658680, guid: d79c5edf719d28946b2c1e16b9bf638d, type: 3}
       propertyPath: m_Name
       value: Villain

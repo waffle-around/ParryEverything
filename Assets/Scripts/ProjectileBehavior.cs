@@ -1,33 +1,44 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class ProjectileBehavior : MonoBehaviour
 {
-    public float speed = 5f;
+    public float randSpeed;
+    private AudioSource audio;
     //private Rigidbody2D rb;
    
     void Start()
     {
-       // rb = GetComponent<Rigidbody2D>();
-       // rb.linearVelocity = Vector2.left * speed;
+        StartCoroutine(RandomNumber());
     }
 
     void Update()
     {
-        transform.Translate(Vector2.left * speed * Time.deltaTime);
+        transform.Translate(Vector2.left * randSpeed * Time.deltaTime);
+    }
+
+    IEnumerator RandomNumber()
+    {
+        while (true)
+        {
+            randSpeed = Random.Range(1.0f, 19.0f);
+            yield return new WaitForSeconds(2f); 
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Piss");
+            audio.Play();   
             Destroy(this.gameObject);
         }
 
         if(collision.gameObject.CompareTag("Parry"))
         {
             
-            Destroy(this.gameObject);
+            Destroy(gameObject, 1.0f);
         }
             
     }
