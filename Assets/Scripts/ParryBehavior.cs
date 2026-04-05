@@ -7,7 +7,7 @@ public class ParryBehavior : MonoBehaviour
     public Transform confSpawner;
     public bool parried = false;
     public GameObject parryConfirm;
-    public ParryBox parrybox;
+    private ParryBox parrybox;
     //BoxCollider2D collider;
 
 
