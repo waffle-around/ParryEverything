@@ -104,6 +104,7 @@ GameObject:
   - component: {fileID: 9202582553649241806}
   - component: {fileID: 5590045630715152202}
   - component: {fileID: -5286912420189573773}
+  - component: {fileID: 6513322928065702067}
   m_Layer: 0
   m_Name: ParryConfirm
   m_TagString: Untagged
@@ -177,7 +178,7 @@ SpriteRenderer:
   m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 8957324059118975939, guid: d5ec75cd33f905644a1c3a19133329df, type: 3}
-  m_Color: {r: 0.8490566, g: 0.75453895, b: 0.75453895, a: 0.8039216}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -393,3 +394,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestroyAfter
   DestroyTimer: 1
+--- !u!114 &6513322928065702067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5174837281525000084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f89f7f7cc2f8ccf48a30af2d1b467961, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
