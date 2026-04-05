@@ -1,16 +1,31 @@
+using System.Threading;
 using UnityEngine;
 
 public class ParryBox : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public bool parried = false;
+    public GameObject parryConfirm;
+    public Transform confSpawner;
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+
     void Update()
     {
-        
+        if (parried)
+        {
+            Instantiate(parryConfirm, confSpawner.position, confSpawner.rotation);
+        }
+    }
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Projectile"))
+        {
+            Debug.Log("ass");
+            parried = true;
+        }
     }
 }

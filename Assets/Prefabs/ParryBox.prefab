@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4373566554955022121}
   - component: {fileID: -1407301139447620315}
   - component: {fileID: -2528868481137409291}
+  - component: {fileID: 306414712719418023}
   m_Layer: 0
   m_Name: ParryBox
   m_TagString: Parry
@@ -250,3 +251,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &306414712719418023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8887834384734651948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9be9898d1c9e2e747ae11dee99666369, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ParryBox
+  parried: 0
