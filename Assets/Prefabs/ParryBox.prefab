@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 3361391356643468565}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.457122, y: 0.33136693, z: 0}
+  m_LocalPosition: {x: 9.8, y: 0.33136693, z: 0}
   m_LocalScale: {x: 1.4199493, y: 1.0499198, z: 0.768935}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -157,7 +157,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -295,4 +295,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a3c257e3a491264fb273f9d67b5cb8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ParryBox
-  parried: 0
+  parryConfirm: {fileID: 5174837281525000084, guid: 76a911df0c962d64096f149d2a347e75, type: 3}
+  confSpawner: {fileID: 3404984709209194398}

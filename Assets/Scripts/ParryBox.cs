@@ -3,23 +3,18 @@ using UnityEngine;
 
 public class ParryBox : MonoBehaviour
 {
-    public bool parried = false;
+    public GameObject parryConfirm;
+    public Transform confSpawner;
 
-    void Start()
+    void OnTriggerEnter2D(Collider2D other)
     {
-        
-    }
-
-
-    void Update()
-    {
-       
-    }
-    void OnCollisionEnter2d(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Projectile"))
+        if (other.CompareTag("Projectile"))
         {
-            Debug.Log("lol");
+            Debug.Log("Parried!");
+
+            Instantiate(parryConfirm, confSpawner.position, Quaternion.identity);
+
+            Destroy(other.gameObject); // destroy projectile
         }
     }
 }
