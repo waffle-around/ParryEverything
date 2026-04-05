@@ -612,6 +612,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1894117337875753903, guid: d79c5edf719d28946b2c1e16b9bf638d, type: 3}
+      propertyPath: fireRate
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5209326671848596932, guid: d79c5edf719d28946b2c1e16b9bf638d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.18
@@ -655,6 +659,10 @@ PrefabInstance:
     - target: {fileID: 8343698490060658680, guid: d79c5edf719d28946b2c1e16b9bf638d, type: 3}
       propertyPath: m_Name
       value: Villain
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343698490060658680, guid: d79c5edf719d28946b2c1e16b9bf638d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
