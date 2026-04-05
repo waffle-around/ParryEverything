@@ -357,7 +357,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61b9d99577261cd40afa62fd03a741dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VillainBehavior
-  spawner: {fileID: 0}
+  spawner: {fileID: 1574089291}
   projectile: {fileID: 5882037652134342514, guid: 0947fb2b0db4c6446ad3dbacd5b135ca, type: 3}
   fireRate: 1.7
 --- !u!1 &1161730752
@@ -405,6 +405,11 @@ Transform:
   - {fileID: 1661874668}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1574089291 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2413489288502011402, guid: d79c5edf719d28946b2c1e16b9bf638d, type: 3}
+  m_PrefabInstance: {fileID: 5949235109974882973}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1661874667
 GameObject:
   m_ObjectHideFlags: 0
@@ -642,7 +647,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2413489288502011402, guid: d79c5edf719d28946b2c1e16b9bf638d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.98963255
+      value: 0.99911726
       objectReference: {fileID: 0}
     - target: {fileID: 2413489288502011402, guid: d79c5edf719d28946b2c1e16b9bf638d, type: 3}
       propertyPath: m_LocalRotation.x
@@ -654,11 +659,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2413489288502011402, guid: d79c5edf719d28946b2c1e16b9bf638d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.14362274
+      value: -0.042008866
       objectReference: {fileID: 0}
     - target: {fileID: 2413489288502011402, guid: d79c5edf719d28946b2c1e16b9bf638d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -16.515
+      value: -4.815
       objectReference: {fileID: 0}
     - target: {fileID: 2865219861106423263, guid: d79c5edf719d28946b2c1e16b9bf638d, type: 3}
       propertyPath: m_Color.b
