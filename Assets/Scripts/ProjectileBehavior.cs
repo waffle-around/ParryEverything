@@ -26,7 +26,7 @@ public class ProjectileBehavior : MonoBehaviour
 
         if(collision.gameObject.CompareTag("Parry"))
         {
-            Debug.Log("ass");
+            
             Destroy(this.gameObject);
         }
             
