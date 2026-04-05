@@ -17,6 +17,9 @@ public class ParryBox : MonoBehaviour
     }
     void OnCollisionEnter2d(Collision collision)
     {
-        
+        if (collision.gameObject.CompareTag("Projectile"))
+        {
+            Debug.Log("lol");
+        }
     }
 }
