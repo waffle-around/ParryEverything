@@ -41,7 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5209326671848596932}
   - component: {fileID: 2865219861106423263}
-  - component: {fileID: 3220158935781758972}
+  - component: {fileID: 1894117337875753903}
   m_Layer: 0
   m_Name: Villain
   m_TagString: Untagged
@@ -124,7 +124,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &3220158935781758972
+--- !u!114 &1894117337875753903
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -133,9 +133,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8343698490060658680}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b9d99577261cd40afa62fd03a741dc, type: 3}
+  m_Script: {fileID: 11500000, guid: 65d6b2e2ba8491c42b3a6128ecc85012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VillainBehavior
   spawner: {fileID: 6450608012000606388}
   projectile: {fileID: 5882037652134342514, guid: 0947fb2b0db4c6446ad3dbacd5b135ca, type: 3}
-  fireRate: 1.7
+  fireRate: 1

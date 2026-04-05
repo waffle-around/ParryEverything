@@ -4,8 +4,6 @@ using UnityEngine;
 public class ParryBox : MonoBehaviour
 {
     public bool parried = false;
-    public GameObject parryConfirm;
-    public Transform confSpawner;
 
     void Start()
     {
@@ -15,17 +13,10 @@ public class ParryBox : MonoBehaviour
 
     void Update()
     {
-        if (parried)
-        {
-            Instantiate(parryConfirm, confSpawner.position, confSpawner.rotation);
-        }
+       
     }
-    void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter2d(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Projectile"))
-        {
-            Debug.Log("ass");
-            parried = true;
-        }
+        
     }
 }

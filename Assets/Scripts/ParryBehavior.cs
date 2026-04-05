@@ -4,15 +4,17 @@ public class ParryBehavior : MonoBehaviour
 {
     public GameObject parryBox;
     public Transform spawner;
-    //public Transform confSpawner;
+    public Transform confSpawner;
     public bool parried = false;
-    //public GameObject parryConfirm;
+    public GameObject parryConfirm;
+    public ParryBox parrybox;
     //BoxCollider2D collider;
 
 
     void Start()
     {
         //collider = Get<BoxCollider2D>();   
+     
     }
 
     void Update()
@@ -23,17 +25,18 @@ public class ParryBehavior : MonoBehaviour
             parried = true;
         }
 
-        /* if (parried)
-         {
-             Instantiate(parryConfirm, confSpawner.position, confSpawner.rotation);
-         }*/
-        void OnCollisionEnter(Collision collision)
+        if (parried)
         {
-            if (collision.gameObject.CompareTag("Projectile"))
-            {
-                Debug.Log("ass");
-                parried = true;
-            }
+            Instantiate(parryConfirm, confSpawner.position, confSpawner.rotation);
+            parried = false;
+        }
+    }
+
+    void OnCollisionEnter2d(Collision collision)
+    {
+        if (parryConfirm != null)
+        {
+
         }
     }
 }
