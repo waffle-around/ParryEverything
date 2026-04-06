@@ -10,8 +10,6 @@ public class ParryBox : MonoBehaviour
     {
         if (other.CompareTag("Projectile"))
         {
-            Debug.Log("Parried!");
-
             Instantiate(parryConfirm, confSpawner.position, Quaternion.identity);
 
             Destroy(other.gameObject); // destroy projectile

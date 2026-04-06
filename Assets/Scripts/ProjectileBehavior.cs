@@ -5,7 +5,7 @@ using UnityEngine;
 public class ProjectileBehavior : MonoBehaviour
 {
     public float randSpeed;
-    private AudioSource audio;
+ 
     //private Rigidbody2D rb;
    
     void Start()
@@ -31,8 +31,7 @@ public class ProjectileBehavior : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player"))
         {
-            audio.Play();   
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
 
         if(collision.gameObject.CompareTag("Parry"))
