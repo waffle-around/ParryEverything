@@ -1259,6 +1259,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5256423284952622944, guid: a6d9b1cac471a6044afb2ffd7cf6d07e, type: 3}
+      propertyPath: parryCooldownTime
+      value: 1.3
+      objectReference: {fileID: 0}
     - target: {fileID: 6044816261257013921, guid: a6d9b1cac471a6044afb2ffd7cf6d07e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.38
